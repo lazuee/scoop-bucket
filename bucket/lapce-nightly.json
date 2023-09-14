@@ -1,4 +1,5 @@
 {
+    "$schema": "https://ghproxy.net/https://raw.githubusercontent.com/ScoopInstaller/Scoop/master/schema.json",
     "version": "0.2.9-nightly.4154fe3",
     "description": "Lightning-fast and Powerful Code Editor written in Rust (nightly builds)",
     "homepage": "http://lapce.dev/",

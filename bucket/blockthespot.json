@@ -1,41 +1,42 @@
 {
-    "version": "2023.9.01.96",
-    "description": "Removes advertisements in Spotify.",
-    "homepage": "https://github.com/mrpond/BlockTheSpot",
-    "license": "MIT",
-    "depends": "spotify-latest",
-    "url": "https://ghproxy.net/https://github.com/mrpond/BlockTheSpot/releases/download/2023.9.01.96/chrome_elf.zip",
-    "hash": "8f44abcd71bab02481965ae297954d93346b660e7988515ae21adb35411b3e8c",
-    "installer": {
-      "script": [
-        "if ($global) {",
-        "    Write-Host \"$app cannot be installed globally.\" -Foreground Red",
-        "    exit 1",
-        "}",
-        "",
-        "$null, $bucket = find_manifest($app)",
-        "$bucketdir = Find-BucketDirectory($bucket)",
-        "Copy-Item \"$bucketdir\\..\\scripts\\blockthespot.ps1\" -Destination $dir",
-        "& \"$dir\\blockthespot.ps1\""
-      ]
-    },
-    "uninstaller": {
-      "script": [
-        "if (!(installed spotify-latest)) { return }",
-        "",
-        "$spotify_running = Get-Process -ErrorAction Ignore -Name Spotify",
-        "Stop-Process -ErrorAction Ignore -Name Spotify | Out-Null",
-        "",
-        "$spotify_dir = \"$(appdir spotify-latest)\\current\"",
-        "Move-Item -ErrorAction Ignore -Force \"$spotify_dir\\chrome_elf.dll.original\" -Destination \"$spotify_dir\\chrome_elf.dll\"",
-        "Remove-Item -ErrorAction Ignore \"$spotify_dir\\config.ini\"",
-        "",
-        "if ($spotify_running) { Start-Process \"$spotify_dir\\Spotify.exe\" }"
-      ]
-    },
-    "bin": "blockthespot.ps1",
-    "checkver": "github",
-    "autoupdate": {
-      "url": "https://ghproxy.net/https://github.com/mrpond/BlockTheSpot/releases/download/$version/chrome_elf.zip"
-    }
+  "$schema": "https://ghproxy.net/https://raw.githubusercontent.com/ScoopInstaller/Scoop/master/schema.json",
+  "version": "2023.9.01.96",
+  "description": "Removes advertisements in Spotify.",
+  "homepage": "https://github.com/mrpond/BlockTheSpot",
+  "license": "MIT",
+  "depends": "spotify-latest",
+  "url": "https://ghproxy.net/https://github.com/mrpond/BlockTheSpot/releases/download/2023.9.01.96/chrome_elf.zip",
+  "hash": "8f44abcd71bab02481965ae297954d93346b660e7988515ae21adb35411b3e8c",
+  "installer": {
+    "script": [
+      "if ($global) {",
+      "    Write-Host \"$app cannot be installed globally.\" -Foreground Red",
+      "    exit 1",
+      "}",
+      "",
+      "$null, $bucket = find_manifest($app)",
+      "$bucketdir = Find-BucketDirectory($bucket)",
+      "Copy-Item \"$bucketdir\\..\\scripts\\blockthespot.ps1\" -Destination $dir",
+      "& \"$dir\\blockthespot.ps1\""
+    ]
+  },
+  "uninstaller": {
+    "script": [
+      "if (!(installed spotify-latest)) { return }",
+      "",
+      "$spotify_running = Get-Process -ErrorAction Ignore -Name Spotify",
+      "Stop-Process -ErrorAction Ignore -Name Spotify | Out-Null",
+      "",
+      "$spotify_dir = \"$(appdir spotify-latest)\\current\"",
+      "Move-Item -ErrorAction Ignore -Force \"$spotify_dir\\chrome_elf.dll.original\" -Destination \"$spotify_dir\\chrome_elf.dll\"",
+      "Remove-Item -ErrorAction Ignore \"$spotify_dir\\config.ini\"",
+      "",
+      "if ($spotify_running) { Start-Process \"$spotify_dir\\Spotify.exe\" }"
+    ]
+  },
+  "bin": "blockthespot.ps1",
+  "checkver": "github",
+  "autoupdate": {
+    "url": "https://ghproxy.net/https://github.com/mrpond/BlockTheSpot/releases/download/$version/chrome_elf.zip"
   }
+}
