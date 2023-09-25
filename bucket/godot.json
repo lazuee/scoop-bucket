@@ -1,0 +1,45 @@
+{
+    "version": "4.2-dev5",
+    "description": "A feature-packed, cross-platform game engine to create 2D and 3D games from a unified interface.",
+    "homepage": "https://godotengine.org/",
+    "license": "MIT",
+    "architecture": {
+        "64bit": {
+            "url": "https://downloads.tuxfamily.org/godotengine/4.2/dev5/Godot_v4.2-dev5_win64.exe.zip",
+            "hash": "sha512:5a551522f14532fb6b8533f8379ed95e69a7a7aed8855388951d5c580ac37f3ccadae0b9f92f0e2ce3dfc3fc8815c43633ff0a783425cbf2ab315841fe9df23a"
+        },
+        "32bit": {
+            "url": "https://downloads.tuxfamily.org/godotengine/4.2/dev5/Godot_v4.2-dev5_win32.exe.zip",
+            "hash": "sha512:3b424b983cffd11aef27a39ed56745a34342748020bf9893f531987d9e5c39eaf297df15414d7a53e2a516b6355d9081998d8b947de798bd4a6779f9b127831b"
+        }
+    },
+    "pre_install": [
+        "Remove-Item \"$dir\\Godot_*_console.*\"",
+        "Get-Item \"$dir\\Godot_*.exe\" | Rename-Item -NewName 'godot.exe'"
+    ],
+    "bin": "godot.exe",
+    "shortcuts": [
+        [
+            "godot.exe",
+            "Godot Engine"
+        ]
+    ],
+    "checkver": {
+        "url": "https://godotengine.org/blog/pre-release/",
+        "regex": "Dev snapshot: Godot (?<ver>[\\d.]+) dev (?<dev>[\\d.]+)",
+        "replace": "${1}-dev${2}"
+    },
+    "autoupdate": {
+        "architecture": {
+            "64bit": {
+                "url": "https://downloads.tuxfamily.org/godotengine/$matchVer/dev$matchDev/Godot_v$version_win64.exe.zip"
+            },
+            "32bit": {
+                "url": "https://downloads.tuxfamily.org/godotengine/$matchVer/dev$matchDev/Godot_v$version_win32.exe.zip"
+            }
+        },
+        "hash": {
+            "url": "$baseurl/SHA512-SUMS.txt"
+        }
+    }
+}
