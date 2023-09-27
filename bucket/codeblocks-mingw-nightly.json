@@ -35,8 +35,10 @@
         }
     },
     "bin": [
-        "codeblocks.exe",
-        "codeblocks-nightly"
+        [
+            "codeblocks.exe",
+            "codeblocks-nightly"
+        ]
     ],
     "shortcuts": [
         [
