@@ -17,6 +17,21 @@
             "Defold"
         ]
     ],
+    "suggest": {
+        "git": "main/git",
+        "7zip": "main/7zip",
+        "curl": "main/curl",
+        "jdk": "lazuee/jdk",
+        "python": "main/python",
+        "mingw": "main/mingw",
+        "msys2": "main/msys2",
+        "cmake": "main/cmake",
+        "patch": "main/patch",
+        "ccache": "main/ccache",
+        "ripgrep": "main/ripgrep",
+        "wget": "main/wget",
+        "windows-terminal": "extras/windows-terminal"
+    },
     "url": "https://github.com/defold/defold/releases/download/1.6.1/Defold-x86_64-win32.zip",
     "version": "1.6.1"
 }
