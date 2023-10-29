@@ -9,8 +9,8 @@ A bucket for [Scoop](https://scoop.sh), the Windows command-line installer.
 After manifests have been committed and pushed, run the following:
 
 ```pwsh
-scoop bucket add lazapp https://github.com/lazuee/scoop-bucket
-scoop install lazapp/<manifestname>
+scoop bucket add lazuee https://github.com/lazuee/scoop-bucket
+scoop install lazuee/<manifestname>
 ```
 
 ## How do I contribute new manifests?
