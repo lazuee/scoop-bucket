@@ -1,13 +1,13 @@
 {
     "$schema": "https://ghproxy.net/https://raw.githubusercontent.com/ScoopInstaller/Scoop/master/schema.json",
-    "version": "0.3.1-nightly.ede1159",
+    "version": "0.3.2-nightly.cb96e5a",
     "description": "Lightning-fast and Powerful Code Editor written in Rust (nightly builds)",
     "homepage": "http://lapce.dev/",
     "license": "Apache-2.0",
     "architecture": {
         "64bit": {
             "url": "https://ghproxy.net/https://github.com/lapce/lapce/releases/download/nightly/Lapce-windows-portable.zip",
-            "hash": "8516b15886541b697e015fa4d9a650cb5fbcbdd93eddb060eb180783100d6188"
+            "hash": "ffa4653b48930ba35ddbd8c5de718fdb8c38dd010ecf288d3222a7d7021d79a6"
         }
     },
     "bin": [
