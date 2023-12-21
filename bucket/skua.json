@@ -1,11 +1,11 @@
 {
-    "version": "",
+    "version": "1.2.3.0",
     "description": "Skua is a AQW Client bot.",
     "homepage": "https://github.com/BrenoHenrike/Skua",
     "architecture": {
         "64bit": {
             "url": "",
-            "hash": ""
+            "hash": "fed976c8f354c9ade7797698daa3510d67a4777471179f525df3c91e282de490"
         }
     },
     "shortcuts": [
