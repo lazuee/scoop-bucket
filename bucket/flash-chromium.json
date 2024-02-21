@@ -6,11 +6,11 @@
     "architecture": {
         "64bit": {
             "url": "https://github.com/tangalbert919/ungoogled-chromium-binaries/releases/download/88.0.4324.150-1/ungoogled-chromium_88.0.4324.150-1.1_windows-x64.zip",
-            "hash": "d32361cb77076556f5ca64cccbdaeaffaa8e2f5234212ebbfb46d45c86aa5bab"
+            "hash": "dd0a2530d9d63578ec72981452044cf58618d64a6680928e0634ef2d051324f3"
         },
         "32bit": {
             "url": "https://github.com/tangalbert919/ungoogled-chromium-binaries/releases/download/88.0.4324.150-1/ungoogled-chromium_88.0.4324.150-1.1_windows-x86.zip",
-            "hash": "0d30db89d2bb3b2c7431a488ea4d1ef67adfd33a5e9c7128691a4adda503ea2d"
+            "hash": "4ad9be8c4e5c5c66068feb79492c729d3f0505c83018065cfdca512bdd36317f"
         }
     },
     "extract_dir": "ungoogled-chromium_88.0.4324.150-1.1_windows",
