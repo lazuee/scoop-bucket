@@ -5,7 +5,7 @@
     "license": "BSD-3-Clause",
     "architecture": {
         "64bit": {
-            "url": "https://github.com/macchrome/winchrome/releases/download/v87.0.4280.88-r812852-Win64/ungoogled-chromium-87.0.4280.88-1_Win64.7zz",
+            "url": "https://github.com/macchrome/winchrome/releases/download/v87.0.4280.88-r812852-Win64/ungoogled-chromium-87.0.4280.88-1_Win64.7z",
             "hash": "751946cc8da47606b21f2594a8445b70d6c16d40e214430e54bceecfc681d217",
             "extract_dir": "ungoogled-chromium-87.0.4280.88-1_Win64"
         }
