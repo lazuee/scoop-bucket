@@ -1,18 +1,13 @@
 {
-    "version": "88.0.4324.150",
+    "version": "87.0.4280.88",
     "description": "Chromium with Flashplayer support",
     "homepage": "https://github.com/macchrome/winchrome",
     "license": "BSD-3-Clause",
     "architecture": {
         "64bit": {
-            "url": "https://github.com/macchrome/winchrome/releases/download/v88.0.4324.150-r827102-Win64/ungoogled-chromium-88.0.4324.150-1_Win64.7z",
-            "hash": "5111cbd22bb31f2dac892a72ac537e4494550dd9c206357dc7ba5339b7a1fdf8",
-            "extract_dir": "ungoogled-chromium-88.0.4324.150-1_Win64"
-        },
-        "32bit": {
-            "url": "https://github.com/macchrome/winchrome/releases/download/v88.0.4324.150-r827102-Win64/ungoogled-chromium-88.0.4324.150-1_Win32.7z",
-            "hash": "c45900bf9875f41fa0ff5b96e3dc35a4b13ab23f58ff87cdf6116c970a4996c1",
-            "extract_dir": "ungoogled-chromium-88.0.4324.150-1_Win32"
+            "url": "https://github.com/macchrome/winchrome/releases/download/v87.0.4280.88-r812852-Win64/ungoogled-chromium-87.0.4280.88-1_Win64.7zz",
+            "hash": "751946cc8da47606b21f2594a8445b70d6c16d40e214430e54bceecfc681d217",
+            "extract_dir": "ungoogled-chromium-87.0.4280.88-1_Win64"
         }
     },
     "bin": [
