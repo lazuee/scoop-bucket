@@ -19,14 +19,14 @@
         [
             "chrome.exe",
             "flash-chromium",
-            "--user-data-dir=\"$dir\\User Data\" --ignore-gpu-blacklist --ppapi-flash-path=\"$dir\\User Data\\flash\\pepflashplayer64_32_0_0_371.dll\" --ppapi-flash-version=\"32.0.0.371\""
+            "--user-data-dir=\"$dir\\User Data\" --ignore-gpu-blacklist --ppapi-flash-path=\"$dir\\User Data\\flash\\pepflashplayer64_32_0_0_371.dll\" --ppapi-flash-version=\"32.0.0.500\""
         ]
     ],
     "shortcuts": [
         [
             "chrome.exe",
             "Flash Chromium",
-            "--user-data-dir=\"$dir\\User Data\" --ignore-gpu-blacklist --ppapi-flash-path=\"$dir\\User Data\\flash\\pepflashplayer64_32_0_0_371.dll\" --ppapi-flash-version=\"32.0.0.371\""
+            "--user-data-dir=\"$dir\\User Data\" --ignore-gpu-blacklist --ppapi-flash-path=\"$dir\\User Data\\flash\\pepflashplayer64_32_0_0_371.dll\" --ppapi-flash-version=\"32.0.0.500\""
         ]
     ],
     "persist": "User Data"
