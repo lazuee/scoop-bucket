@@ -9,8 +9,9 @@
             "hash": "cb5912d482e0f9d7437c06c3834fabdc4bea1a9cfa3fdcd3cbbf8a9e01c35379",
             "extract_dir": "chromium_win64_87.0.4280.168_x64\\Chromium",
             "post_install": [
-                "$scriptdir = \"$bucketsdir\\lazuee\\scripts\"",
-                "Copy-Item \"$scriptdir\\pepflashplayer64_32_0_0_371.dll\" \"$dir\\87.0.4280.168\""
+                "Remove-Item -Force -Recurse -Path \"chromium_win64_87.0.4280.168_x64\"",
+                "New-Item -ItemType Directory -Force -Path \"$persist_dir\\User Data\\flash\"",
+                "Copy-Item -Path \"$bucketsdir\\$bucket\\scripts\\pepflashplayer64_32_0_0_371.dll\" -Destination \"$persist_dir\\User Data\\flash\"",
             ]
         }
     },
@@ -18,14 +19,14 @@
         [
             "chrome.exe",
             "flash-chromium",
-            "--user-data-dir=\"$dir\\User Data\" --ignore-gpu-blacklist --ppapi-flash-path=\"$dir\\87.0.4280.168\\pepflashplayer64_32_0_0_371.dll --ppapi-flash-version=\"32.0.0.371\""
+            "--user-data-dir=\"$dir\\User Data\" --ignore-gpu-blacklist --ppapi-flash-path=\"$persist_dir\\User Data\\flash\\pepflashplayer64_32_0_0_371.dll\" --ppapi-flash-version=\"32.0.0.371\""
         ]
     ],
     "shortcuts": [
         [
             "chrome.exe",
             "Flash Chromium",
-            "--user-data-dir=\"$dir\\User Data\" --ignore-gpu-blacklist --ppapi-flash-path=\"$dir\\87.0.4280.168\\pepflashplayer64_32_0_0_371.dll --ppapi-flash-version=\"32.0.0.371\""
+            "--user-data-dir=\"$dir\\User Data\" --ignore-gpu-blacklist --ppapi-flash-path=\"$persist_dir\\User Data\\flash\\pepflashplayer64_32_0_0_371.dll\" --ppapi-flash-version=\"32.0.0.371\""
         ]
     ],
     "persist": "User Data"
