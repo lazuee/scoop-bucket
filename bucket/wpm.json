@@ -1,14 +1,17 @@
 {
-    "version": "",
+    "version": "fd7515c289c13916a5437c0ae8a02f12e3537090",
     "description": "Simple user process management for Windows",
     "homepage": "https://github.com/LGUG2Z/wpm",
     "architecture": {
         "64bit": {
-            "url": "https://nightly.link/ckormanyos/xxd/workflows/xxd/main/xxd-win64-msvc.zip",
-            "hash": "a42678f09d948202854913ce12a93b57ab19b5c49fc791902c84b0c6d6af3613"
+            "url": "https://nightly.link/LGUG2Z/wpm/workflows/windows.yaml/master/wpm-x86_64-pc-windows-msvc-fd7515c289c13916a5437c0ae8a02f12e3537090.zip",
+            "hash": "c5b1371fcf57b80d7c9f8c1415143df1514d9098ffca849731c6ad2279d7d295"
         }
     },
-    "bin": ["wpmd.exe", "wpmctl.exe"],
+    "bin": [
+        "wpmd.exe",
+        "wpmctl.exe"
+    ],
     "extract_dir": "x86_64-pc-windows-msvc/release",
     "checkver": {
         "script": [
