@@ -17,7 +17,8 @@
             "$head_sha = $workflow_runs.head_sha",
             "$version = $workflow_runs.id",
             "Write-Output $version"
-        ]
+        ],
+        "regex": "(?<version>.+)"
     },
     "autoupdate": {
         "architecture": {
