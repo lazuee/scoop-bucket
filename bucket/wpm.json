@@ -1,0 +1,27 @@
+{
+    "version": "",
+    "description": "Simple user process management for Windows",
+    "homepage": "https://github.com/LGUG2Z/wpm",
+    "architecture": {
+        "64bit": {
+            "url": "https://nightly.link/ckormanyos/xxd/workflows/xxd/main/xxd-win64-msvc.zip",
+            "hash": "a42678f09d948202854913ce12a93b57ab19b5c49fc791902c84b0c6d6af3613"
+        }
+    },
+    "bin": ["wpmd.exe", "wpmctl.exe"],
+    "extract_dir": "x86_64-pc-windows-msvc/release",
+    "checkver": {
+        "script": [
+            "$version = (Invoke-WebRequest 'https://api.github.com/repositories/903621663/actions/workflows/windows.yaml/runs?branch=master&status=success' -UseBasicParsing | ConvertFrom-Json).workflow_runs[0].head_sha",
+            "Write-Output $version"
+        ],
+        "regex": "(?<version>.+)"
+    },
+    "autoupdate": {
+        "architecture": {
+            "64bit": {
+                "url": "https://nightly.link/LGUG2Z/wpm/workflows/windows.yaml/master/wpm-x86_64-pc-windows-msvc-$version.zip"
+            }
+        }
+    }
+}
