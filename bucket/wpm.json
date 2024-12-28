@@ -14,16 +14,17 @@
     "checkver": {
         "script": [
             "$workflow_runs = (Invoke-WebRequest 'https://api.github.com/repositories/903621663/actions/workflows/windows.yaml/runs?branch=master&status=success' -UseBasicParsing | ConvertFrom-Json).workflow_runs[0]",
-            "$head_sha = $workflow_runs.head_sha",
+            "$sha = $workflow_runs.head_sha",
             "$version = $workflow_runs.id",
-            "Write-Output $version"
+            "Write-Output $version-$sha"
         ],
-        "regex": "(?<version>.+)"
+        "regex": "(?<version>.+)-(?<sha>.+)",
+        "replace": "${version}"
     },
     "autoupdate": {
         "architecture": {
             "64bit": {
-                "url": "https://nightly.link/LGUG2Z/wpm/workflows/windows.yaml/master/wpm-x86_64-pc-windows-msvc-$head_sha.zip"
+                "url": "https://nightly.link/LGUG2Z/wpm/actions/runs/$matchVersion/wpm-x86_64-pc-windows-msvc-$matchSha.zip"
             }
         }
     }
