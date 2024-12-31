@@ -1,19 +1,28 @@
 {
-    "version": "12537186907",
+    "version": "2537187",
     "description": "Simple user process management for Windows",
     "homepage": "https://github.com/LGUG2Z/wpm",
-    "license": "Komorebi License",
+    "notes": "Check out the examples on https://github.com/LGUG2Z/wpm/tree/master/examples",
+    "license": {
+        "identifier": "Komorebi",
+        "url": "https://github.com/LGUG2Z/wpm/blob/master/LICENSE.md"
+    },
     "architecture": {
         "64bit": {
-            "url": "https://nightly.link/LGUG2Z/wpm/actions/runs/12537186907/wpm-x86_64-pc-windows-msvc-602b0aa4092e5567da83ce60e6718c09908531cc.zip",
-            "hash": "2fe119e3d06e4d026f0a633f34b1ed34db2600d0603286017624b2c6b88d2046"
+            "url": "https://nightly.link/LGUG2Z/wpm/actions/runs/2537187/wpm-x86_64-pc-windows-msvc-602b0aa4092e5567da83ce60e6718c09908531cc.zip",
+            "hash": "2fe119e3d06e4d026f0a633f34898989999600d0603286017624b2c6b88d2046",
+            "extract_dir": "x86_64-pc-windows-msvc/release"
+        },
+        "arm64": {
+            "url": "https://nightly.link/LGUG2Z/wpm/actions/runs/2537187/wpm-x86_64-pc-windows-msvc-602b0aa4092e5567da83ce60e6718c09908531cc.zip",
+            "hash": "2fe119e3d06e4d026f0a633f34b1ed34db260601762899898984b2c6b88d2046",
+            "extract_dir": "aarch64-pc-windows-msvc/release"
         }
     },
     "bin": [
         "wpmd.exe",
         "wpmctl.exe"
     ],
-    "extract_dir": "x86_64-pc-windows-msvc/release",
     "checkver": {
         "script": [
             "$workflow_runs = (Invoke-WebRequest 'https://api.github.com/repositories/903621663/actions/workflows/windows.yaml/runs?branch=master&status=success' -UseBasicParsing | ConvertFrom-Json).workflow_runs[0]",
@@ -28,6 +37,9 @@
         "architecture": {
             "64bit": {
                 "url": "https://nightly.link/LGUG2Z/wpm/actions/runs/$matchVersion/wpm-x86_64-pc-windows-msvc-$matchSha.zip"
+            },
+            "arm64": {
+                "url": "https://nightly.link/LGUG2Z/wpm/actions/runs/$matchVersion/wpm-aarch64-pc-windows-msvc-$matchSha.zip"
             }
         }
     }
