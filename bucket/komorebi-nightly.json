@@ -1,5 +1,5 @@
 {
-    "version": "13095408223",
+    "version": "13127697129",
     "description": "A tiling window manager for Windows",
     "homepage": "https://github.com/LGUG2Z/komorebi",
     "license": {
@@ -8,13 +8,13 @@
     },
     "architecture": {
         "64bit": {
-            "url": "https://nightly.link/LGUG2Z/komorebi/actions/runs/13095408223/komorebi-x86_64-pc-windows-msvc-f3075efcae05734bfebaa09044654976f7479437.zip",
-            "hash": "3cdac58c8bf817f70955bbc69b5938f08da1178d22932b61ec02d96a6f8f7218",
+            "url": "https://nightly.link/LGUG2Z/komorebi/actions/runs/13127697129/komorebi-x86_64-pc-windows-msvc-83114ed3e772622ea62efad636acfc7cc925f6c4.zip",
+            "hash": "2219e9fa4817af0b2c29e8672cf42100cea4aa81cbc11984f8d2de56a36feadd",
             "extract_dir": "x86_64-pc-windows-msvc/release"
         },
         "arm64": {
-            "url": "https://nightly.link/LGUG2Z/komorebi/actions/runs/13095408223/komorebi-aarch64-pc-windows-msvc-f3075efcae05734bfebaa09044654976f7479437.zip",
-            "hash": "c5e3dc73ce4b4a9fd4689341d59db35d75cf74bc5b99f2986dcbb1e84a750d94",
+            "url": "https://nightly.link/LGUG2Z/komorebi/actions/runs/13127697129/komorebi-aarch64-pc-windows-msvc-83114ed3e772622ea62efad636acfc7cc925f6c4.zip",
+            "hash": "49d844c9e6c5c7199f30a55f1698c1fa39112c479b29fcff7eff4916652a4ec5",
             "extract_dir": "aarch64-pc-windows-msvc/release"
         }
     },
