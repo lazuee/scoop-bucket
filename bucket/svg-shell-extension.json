@@ -10,7 +10,7 @@
         }
     },
     "post_install": "regsvr32 /s \"$dir\\SvgShellExtensions.dll\"",
-    "post_uninstall": "regsvr32 /s /u \"$dir\\SvgShellExtensions.dll\"",
+    "pre_uninstall": "regsvr32 /s /u \"$dir\\SvgShellExtensions.dll\"",
     "checkver": {
         "script": [
             "try {",
