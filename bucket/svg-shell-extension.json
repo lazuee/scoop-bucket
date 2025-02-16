@@ -11,9 +11,7 @@
     },
     "post_install": "regsvr32 SvgShellExtensions.dll",
     "post_uninstall": "regsvr32 /u SvgShellExtensions.dll",
-    "checkver": {
-        "github": "https://github.com/AngusJohnson/SvgShellExtensions"
-    },
+    "checkver": "github",
     "autoupdate": {
         "url": "https://github.com/AngusJohnson/SvgShellExtensions/releases/download/SVG_ShellExt_$version/SvgShellExtensions.zip"
     }
