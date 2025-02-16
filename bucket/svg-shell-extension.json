@@ -11,13 +11,13 @@
     },
     "post_install": [
         "regsvr32 /s \"$dir\\SvgShellExtensions.dll\"",
-        "Stop-Process -Name explorer -Force -ErrorAction SilentlyContinue",
-        "Start-Process explorer"
+        "cmd.exe /c \"taskkill /f /im explorer.exe 2>nul & start explorer.exe\"",
+        "Start-Sleep -Seconds 2"
     ],
     "pre_uninstall": [
-        "Stop-Process -Name explorer -Force -ErrorAction SilentlyContinue",
         "regsvr32 /s /u \"$dir\\SvgShellExtensions.dll\"",
-        "Start-Process explorer"
+        "cmd.exe /c \"taskkill /f /im explorer.exe 2>nul & start explorer.exe\"",
+        "Start-Sleep -Seconds 2"
     ],
     "checkver": {
         "script": [
