@@ -9,10 +9,15 @@
             "hash": "f553750d884ddd7afd0208ddbcd5bdc08c5f192b0a5d521ddbfb52c7a24e9b9f"
         }
     },
-    "post_install": "regsvr32 /s \"$dir\\SvgShellExtensions.dll\"",
+    "post_install": [
+        "regsvr32 /s \"$dir\\SvgShellExtensions.dll\"",
+        "Stop-Process -Name explorer -Force -ErrorAction SilentlyContinue",
+        "Start-Process explorer"
+    ],
     "pre_uninstall": [
+        "Stop-Process -Name explorer -Force -ErrorAction SilentlyContinue",
         "regsvr32 /s /u \"$dir\\SvgShellExtensions.dll\"",
-        "timeout /t 3 /nobreak"
+        "Start-Process explorer"
     ],
     "checkver": {
         "script": [
