@@ -11,7 +11,28 @@
     },
     "post_install": "regsvr32 SvgShellExtensions.dll",
     "post_uninstall": "regsvr32 /u SvgShellExtensions.dll",
-    "checkver": "github",
+    "checkver": {
+        "script": [
+            "try {",
+            "    $auth = Get-GitHubToken",
+            "    $head = @{}",
+            "    if ($auth) { $head = @{ 'Authorization' = \"token $auth\" } }",
+            "    $url1 = 'https://api.github.com/repos/AngusJohnson/SvgShellExtensions/releases/latest'",
+            "    $cont = (Invoke-WebRequest -Headers $head -Uri $url1).Content | ConvertFrom-Json",
+            "    if (!($cont.tag_name)) { Write-Error \"Tag name not found in '$url1'\"; throw }",
+            "    $app_ver = $cont.tag_name -replace '.*?_([\\d.]+)$', '$1'",
+            "    $url2 = 'https://api.github.com/repos/AngusJohnson/SvgShellExtensions/commits?path=run.ps1&per_page=1'",
+            "    $cont2 = (Invoke-WebRequest -Headers $head -Uri $url2).Content | ConvertFrom-Json",
+            "    if (!($cont2.commit.committer.date)) { Write-Error \"Commit date not found in '$url2'\"; throw }",
+            "    $update_date = (Get-Date $cont2.commit.committer.date).ToString('yyyyMMdd')",
+            "    if (!($cont2.sha)) { Write-Error \"Commit hash not found in '$url2'\"; throw }",
+            "    $commit_sha = $cont2.sha.Substring(0, 6)",
+            "    Write-Output \"$app_ver-$update_date-$commit_sha\"",
+            "}",
+            "catch { error $_.Exception.Message; throw }"
+        ],
+        "regex": "([\\w.-]+)"
+    },
     "autoupdate": {
         "url": "https://github.com/AngusJohnson/SvgShellExtensions/releases/download/SVG_ShellExt_$version/SvgShellExtensions.zip"
     }
