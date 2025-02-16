@@ -9,8 +9,8 @@
             "hash": "f553750d884ddd7afd0208ddbcd5bdc08c5f192b0a5d521ddbfb52c7a24e9b9f"
         }
     },
-    "post_install": "regsvr32 \"$dir\\SvgShellExtensions.dll\"",
-    "post_uninstall": "regsvr32 /u \"$dir\\SvgShellExtensions.dll\"",
+    "post_install": "regsvr32 /s \"$dir\\SvgShellExtensions.dll\"",
+    "post_uninstall": "regsvr32 /s /u \"$dir\\SvgShellExtensions.dll\"",
     "checkver": {
         "script": [
             "try {",
