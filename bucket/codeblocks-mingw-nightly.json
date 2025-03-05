@@ -5,6 +5,7 @@
     "license": {
         "identifier": "GPL-3.0-or-later"
     },
+    "depends": "mingw-winlibs",
     "architecture": {
         "64bit": {
             "hash": [
