@@ -14,6 +14,12 @@
         }
     },
     "extract_dir": "RedPanda-CPP",
+    "bin": [
+        [
+            "RedPandaIDE.exe",
+            "redpanda-cpp"
+        ]
+    ],
     "shortcuts": [
         [
             "RedPandaIDE.exe",
