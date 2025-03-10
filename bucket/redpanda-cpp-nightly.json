@@ -24,7 +24,7 @@
     "persist": "config",
     "checkver": {
         "script": [
-            "$workflow_runs = (Invoke-WebRequest 'https://api.github.com/repositories/356104267/actions/workflows/build.yml/runs?branch=master&status=success' -UseBasicParsing | ConvertFrom-Json).workflow_runs[0]",
+            "$workflow_runs = (Invoke-WebRequest 'https://api.github.com/repositories/356104267/actions/workflows/build.yml/runs?branch=master' -UseBasicParsing | ConvertFrom-Json).workflow_runs[0]",
             "$artifacts_url = $workflow_runs.artifacts_url",
             "$artifacts = (Invoke-WebRequest $artifacts_url -UseBasicParsing | ConvertFrom-Json).artifacts",
             "$artifact = $artifacts | Where-Object { $_.name -eq 'Windows MSVC x64' }",
