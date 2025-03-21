@@ -1,12 +1,12 @@
 {
-    "version": "13967716775",
+    "version": "13984413337",
     "description": "Red Panda C++ is a lightweight yet powerful C/C++/GNU Assembly IDE.",
     "homepage": "http://royqh.net/redpandacpp/",
     "license": "GPL-3.0-only",
     "architecture": {
         "64bit": {
-            "url": "https://nightly.link/royqh1979/RedPanda-CPP/actions/runs/13967716775/Windows%20MSVC%20x64.zip",
-            "hash": "d2b98aa926e4bd9e79706ceb544753e6fa6f11535acd32844261c96e227c245f"
+            "url": "https://nightly.link/royqh1979/RedPanda-CPP/actions/runs/13984413337/Windows%20MSVC%20x64.zip",
+            "hash": "e580303868eca0affb287745033ece21401d9c4e1b180513fe68c6a3328cb048"
         }
     },
     "bin": [
