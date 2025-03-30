@@ -1,17 +1,17 @@
 {
-    "version": "14025732749",
+    "version": "14159474712",
     "description": "A simple hotkey daemon for Windows",
     "homepage": "https://github.com/LGUG2Z/whkd",
     "license": "MIT",
     "architecture": {
         "64bit": {
-            "url": "https://nightly.link/LGUG2Z/whkd/actions/runs/14025732749/whkd-x86_64-pc-windows-msvc-a8376242b44547f5b5af23166309b00ad7847df2.zip",
-            "hash": "9f8c80975deffaa329c7abf3a4528c30257ebfcfa2cfa94fd49fdc9a36b18937",
+            "url": "https://nightly.link/LGUG2Z/whkd/actions/runs/14159474712/whkd-x86_64-pc-windows-msvc-ea6c20603d3b94c14196f009be3651c43ecab579.zip",
+            "hash": "c74392cdef51d4a48cd11796fb53b324b7d2b0bc951f232826831089707b3fa2",
             "extract_dir": "x86_64-pc-windows-msvc/release"
         },
         "arm64": {
-            "url": "https://nightly.link/LGUG2Z/whkd/actions/runs/14025732749/whkd-aarch64-pc-windows-msvc-a8376242b44547f5b5af23166309b00ad7847df2.zip",
-            "hash": "9e7daf3fabac684c2398f3d20a0015a93fd527823fb05f3791a10651098f5aac",
+            "url": "https://nightly.link/LGUG2Z/whkd/actions/runs/14159474712/whkd-aarch64-pc-windows-msvc-ea6c20603d3b94c14196f009be3651c43ecab579.zip",
+            "hash": "a85521168a7b987d4f6903b9939892c6bdb7b87aa9477c6c9e2130d233aa286f",
             "extract_dir": "aarch64-pc-windows-msvc/release"
         }
     },
