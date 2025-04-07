@@ -1,5 +1,5 @@
 {
-    "version": "14297245736",
+    "version": "14316573579",
     "description": "Simple user process management for Windows",
     "homepage": "https://github.com/LGUG2Z/wpm",
     "notes": "Check out the examples on https://github.com/LGUG2Z/wpm/tree/master/examples",
@@ -9,13 +9,13 @@
     },
     "architecture": {
         "64bit": {
-            "url": "https://nightly.link/LGUG2Z/wpm/actions/runs/14297245736/wpm-x86_64-pc-windows-msvc-8a84fd263e7d20e042772011b1f9137532846098.zip",
-            "hash": "207ffa31cb79cb258c93446fac2f099e83d2322f0487dbf41ce81009d9fb8ed9",
+            "url": "https://nightly.link/LGUG2Z/wpm/actions/runs/14316573579/wpm-x86_64-pc-windows-msvc-92111d0716c91e60540c6b2c400e144032e0253b.zip",
+            "hash": "393d650c7b8c9eab877fd66e29b24e8728599aadeb0e58b82cbe3de094264eb0",
             "extract_dir": "x86_64-pc-windows-msvc/release"
         },
         "arm64": {
-            "url": "https://nightly.link/LGUG2Z/wpm/actions/runs/14297245736/wpm-aarch64-pc-windows-msvc-8a84fd263e7d20e042772011b1f9137532846098.zip",
-            "hash": "4b60eae392fcbe442d4b4177ff8742726139a0517ee4fa5ede9eede60e900588",
+            "url": "https://nightly.link/LGUG2Z/wpm/actions/runs/14316573579/wpm-aarch64-pc-windows-msvc-92111d0716c91e60540c6b2c400e144032e0253b.zip",
+            "hash": "70d3d373ff60699d7d652259e6228ae6b7149fd2f145a75d1e313418f70ebf3e",
             "extract_dir": "aarch64-pc-windows-msvc/release"
         }
     },
