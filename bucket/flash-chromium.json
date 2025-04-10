@@ -26,7 +26,9 @@
     "shortcuts": [
         [
             "..\\..\\..\\shims\\flash-chromium.exe",
-            "Flash Chromium"
+            "Flash Chromium",
+            "",
+            "chrome.exe"
         ]
     ],
     "persist": "User Data"
