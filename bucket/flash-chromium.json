@@ -9,9 +9,7 @@
             "hash": "cb5912d482e0f9d7437c06c3834fabdc4bea1a9cfa3fdcd3cbbf8a9e01c35379",
             "extract_dir": "chromium_win64_87.0.4280.168_x64\\Chromium",
             "post_install": [
-                "Remove-Item -Force -Recurse -Path \"$dir\\chromium_win64_87.0.4280.168_x64\"",
-                "New-Item -ItemType Directory -Force -Path \"$persist_dir\\User Data\\flash\"",
-                "Copy-Item -Path \"$bucketsdir\\$bucket\\scripts\\$app\\pepflashplayer64_34_0_0_277.dll\" -Destination \"$persist_dir\\User Data\\flash\""
+                "Remove-Item -Force -Recurse -Path \"$dir\\chromium_win64_87.0.4280.168_x64\""
             ]
         }
     },
@@ -19,14 +17,14 @@
         [
             "chrome.exe",
             "flash-chromium",
-            "--user-data-dir=\"$dir\\User Data\" --ignore-gpu-blacklist --disable-site-isolation-trials --disable-web-security --ignore-certificate-errors=\"true\" --allow-insecure-localhost=\"true\" --ppapi-flash-path=\"$dir\\User Data\\flash\\pepflashplayer64_34_0_0_277.dll\" --ppapi-flash-version=\"34.0.0.277\""
+            "--user-data-dir=\"$dir\\User Data\" --ignore-gpu-blacklist --disable-site-isolation-trials --disable-web-security --ignore-certificate-errors=\"true\" --allow-insecure-localhost=\"true\" --ppapi-flash-path=\"$bucketsdir\\$bucket\\scripts\\$app\\pepflashplayer64_34_0_0_277.dll\" --ppapi-flash-version=\"34.0.0.277\""
         ]
     ],
     "shortcuts": [
         [
             "chrome.exe",
             "Flash Chromium",
-            "--user-data-dir=\"$dir\\User Data\" --ignore-gpu-blacklist --disable-site-isolation-trials --disable-web-security --ignore-certificate-errors=\"true\" --allow-insecure-localhost=\"true\" --ppapi-flash-path=\"$dir\\User Data\\flash\\pepflashplayer64_34_0_0_277.dll\" --ppapi-flash-version=\"34.0.0.277\""
+            "--user-data-dir=\"$dir\\User Data\" --ignore-gpu-blacklist --disable-site-isolation-trials --disable-web-security --ignore-certificate-errors=\"true\" --allow-insecure-localhost=\"true\" --ppapi-flash-path=\"$bucketsdir\\$bucket\\scripts\\$app\\pepflashplayer64_34_0_0_277.dll\" --ppapi-flash-version=\"34.0.0.277\""
         ]
     ],
     "persist": "User Data"
