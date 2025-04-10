@@ -20,14 +20,14 @@
         [
             "chrome.exe",
             "flash-chromium",
-            "--user-data-dir=\"$dir\\User Data\" --ignore-gpu-blacklist --autoplay-policy=\"no-user-gesture-required\" --disable-site-isolation-trials --disable-web-security --allow-outdated-plugins --allow-running-insecure-content --ignore-certificate-errors --allow-insecure-localhost --allow-file-access-from-files --ppapi-flash-path=\"$dir\\User Data\\flash\\pepflashplayer64_34_0_0_277.dll\" --ppapi-flash-version=\"34.0.0.277\" --test-type=\"browser\""
+            "--user-data-dir=\"$dir\\User Data\" --ignore-gpu-blacklist --autoplay-policy=\"no-user-gesture-required\" --disable-site-isolation-trials --disable-web-security --allow-outdated-plugins --allow-running-insecure-content --ignore-certificate-errors --allow-insecure-localhost --allow-file-access-from-files --ppapi-flash-path=\"$dir\\User Data\\flash\\pepflashplayer64_34_0_0_277.dll\" --ppapi-flash-version=\"32.0.0.371\" --test-type=\"browser\""
         ]
     ],
     "shortcuts": [
         [
             "chrome.exe",
             "Flash Chromium",
-            "--user-data-dir=\"$dir\\User Data\" --ignore-gpu-blacklist --autoplay-policy=\"no-user-gesture-required\" --disable-site-isolation-trials --disable-web-security --allow-outdated-plugins --allow-running-insecure-content --ignore-certificate-errors --allow-insecure-localhost --allow-file-access-from-files --ppapi-flash-path=\"$dir\\User Data\\flash\\pepflashplayer64_34_0_0_277.dll\" --ppapi-flash-version=\"34.0.0.277\" --test-type=\"browser\""
+            "--user-data-dir=\"$dir\\User Data\" --ignore-gpu-blacklist --autoplay-policy=\"no-user-gesture-required\" --disable-site-isolation-trials --disable-web-security --allow-outdated-plugins --allow-running-insecure-content --ignore-certificate-errors --allow-insecure-localhost --allow-file-access-from-files --ppapi-flash-path=\"$dir\\User Data\\flash\\pepflashplayer64_34_0_0_277.dll\" --ppapi-flash-version=\"32.0.0.371\" --test-type=\"browser\""
         ]
     ],
     "persist": "User Data"
