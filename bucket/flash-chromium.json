@@ -14,14 +14,14 @@
         [
             "chrome.exe",
             "flash-chromium",
-            "--user-data-dir=\"$dir\\User Data\" --ignore-gpu-blacklist --autoplay-policy=\"no-user-gesture-required\" --disable-web-security --allow-outdated-plugins --ignore-certificate-errors=\"true\" --allow-insecure-localhost=\"true\" --ppapi-flash-path=\"$bucketsdir\\$bucket\\scripts\\$app\\pepflashplayer64_34_0_0_277.dll\" --ppapi-flash-version=\"34.0.0.277\""
+            "--user-data-dir=\"$dir\\User Data\" --ignore-gpu-blacklist --autoplay-policy=\"no-user-gesture-required\" --disable-site-isolation-trials --disable-web-security --allow-outdated-plugins --allow-running-insecure-content --ignore-certificate-errors=\"true\" --allow-insecure-localhost=\"true\" --ppapi-flash-path=\"$bucketsdir\\$bucket\\scripts\\$app\\pepflashplayer64_34_0_0_277.dll\" --ppapi-flash-version=\"34.0.0.277\""
         ]
     ],
     "shortcuts": [
         [
             "chrome.exe",
             "Flash Chromium",
-            "--user-data-dir=\"$dir\\User Data\" --ignore-gpu-blacklist --autoplay-policy=\"no-user-gesture-required\" --disable-web-security --allow-outdated-plugins --ignore-certificate-errors=\"true\" --allow-insecure-localhost=\"true\" --ppapi-flash-path=\"$bucketsdir\\$bucket\\scripts\\$app\\pepflashplayer64_34_0_0_277.dll\" --ppapi-flash-version=\"34.0.0.277\""
+            "--user-data-dir=\"$dir\\User Data\" --ignore-gpu-blacklist --autoplay-policy=\"no-user-gesture-required\" --disable-site-isolation-trials --disable-web-security --allow-outdated-plugins --allow-running-insecure-content --ignore-certificate-errors=\"true\" --allow-insecure-localhost=\"true\" --ppapi-flash-path=\"$bucketsdir\\$bucket\\scripts\\$app\\pepflashplayer64_34_0_0_277.dll\" --ppapi-flash-version=\"34.0.0.277\""
         ]
     ],
     "persist": "User Data"
