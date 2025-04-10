@@ -20,14 +20,14 @@
         [
             "chrome.exe",
             "flash-chromium",
-            "--user-data-dir=\"$dir\\User Data\" --ignore-gpu-blacklist --autoplay-policy=\"no-user-gesture-required\" --disable-site-isolation-trials --disable-web-security --allow-outdated-plugins --allow-running-insecure-content --ignore-certificate-errors --allow-insecure-localhost --allow-file-access-from-files --ppapi-flash-path=\"$dir\\User Data\\flash\\pepflashplayer64_34_0_0_277.dll\" --ppapi-flash-version=\"32.0.0.371\" --test-type=\"browser\""
+            "--user-data-dir=\"$dir\\User Data\" --ignore-gpu-blacklist --autoplay-policy=\"no-user-gesture-required\" --disable-site-isolation-trials --disable-web-security --allow-outdated-plugins --allow-running-insecure-content --ignore-certificate-errors --allow-insecure-localhost --allow-file-access-from-files --ppapi-flash-path=\"$dir\\User Data\\flash\\pepflashplayer64_34_0_0_277.dll\" --ppapi-flash-version=\"34.0.0.277\" --test-type=\"browser\" --user-agent=\"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/90.0.4430.93 Safari/537.36 Edg/90.0.818.51\""
         ]
     ],
     "shortcuts": [
         [
             "chrome.exe",
             "Flash Chromium",
-            "--user-data-dir=\"$dir\\User Data\" --ignore-gpu-blacklist --autoplay-policy=\"no-user-gesture-required\" --disable-site-isolation-trials --disable-web-security --allow-outdated-plugins --allow-running-insecure-content --ignore-certificate-errors --allow-insecure-localhost --allow-file-access-from-files --ppapi-flash-path=\"$dir\\User Data\\flash\\pepflashplayer64_34_0_0_277.dll\" --ppapi-flash-version=\"32.0.0.371\" --test-type=\"browser\""
+            "--user-data-dir=\"$dir\\User Data\" --ignore-gpu-blacklist --autoplay-policy=\"no-user-gesture-required\" --disable-site-isolation-trials --disable-web-security --allow-outdated-plugins --allow-running-insecure-content --ignore-certificate-errors --allow-insecure-localhost --allow-file-access-from-files --ppapi-flash-path=\"$dir\\User Data\\flash\\pepflashplayer64_34_0_0_277.dll\" --ppapi-flash-version=\"34.0.0.277\" --test-type=\"browser\" --user-agent=\"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/90.0.4430.93 Safari/537.36 Edg/90.0.818.51\""
         ]
     ],
     "persist": "User Data"
