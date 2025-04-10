@@ -7,10 +7,7 @@
         "64bit": {
             "url": "https://github.com/Alex313031/CR-87/releases/download/M87.0.4280.168/chromium_win64_87.0.4280.168_x64.zip",
             "hash": "cb5912d482e0f9d7437c06c3834fabdc4bea1a9cfa3fdcd3cbbf8a9e01c35379",
-            "extract_dir": "chromium_win64_87.0.4280.168_x64\\Chromium",
-            "post_install": [
-                "Remove-Item -Force -Recurse -Path \"$dir\\chromium_win64_87.0.4280.168_x64\""
-            ]
+            "extract_dir": "chromium_win64_87.0.4280.168_x64\\Chromium"
         }
     },
     "bin": [
