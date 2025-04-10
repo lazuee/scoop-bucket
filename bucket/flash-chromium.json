@@ -25,7 +25,7 @@
     ],
     "shortcuts": [
         [
-            "$scoop_dir\\$app.exe",
+            "..\\..\\..\\shims\\flash-chromium.exe",
             "Flash Chromium"
         ]
     ],
