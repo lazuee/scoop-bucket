@@ -28,6 +28,6 @@
         "replace": "${version}-${build}"
     },
     "autoupdate": {
-        "url": "https://github.com/jindrapetrik/jpexs-decompiler/releases/download/nightly$build/ffdec_$version_nightly$build.zip"
+        "url": "https://github.com/jindrapetrik/jpexs-decompiler/releases/download/nightly$matchBuild/ffdec_$matchVersion_nightly$matchBuild.zip"
     }
 }
